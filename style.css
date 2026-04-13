@@ -1,0 +1,316 @@
+/* RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px 0;
+}
+
+header .logo {
+    float: left;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6b6b;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* HERO SECTION */
+.hero {
+    background: url('images/hire.jpg') no-repeat center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #ff3b3b;
+}
+
+/* CARS SECTION */
+.cars {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.cars h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.cars p {
+    max-width: 700px;
+    margin: 10px auto 40px auto;
+    color: #555;
+}
+
+.car-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.car {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.car:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+.car img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.car h3 {
+    margin-bottom: 5px;
+}
+
+.car p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.car button {
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.car button:hover {
+    background-color: #ff3b3b;
+}
+
+/* BOOKING FORM */
+.booking {
+    padding: 60px 0;
+    background-color: #526fa7;
+    text-align: center;
+}
+
+.booking h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.booking form {
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    gap: 15px;
+}
+
+.booking input, 
+.booking select, 
+.booking button {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.booking button {
+    background-color: #1c1c1c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.booking button:hover {
+    background-color: #ff6b6b;
+}
+/* MARKET RESERVATION */
+.market-reservation {
+    padding: 80px 0;
+    background-color: black;
+    text-align: center;
+}
+.market-reservation h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+.market-reservation p {
+    max-width: 700px;
+    margin: 10px auto 40px auto;
+    color: white;
+}
+.market-reservation a {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* ABOUT */
+.about {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    color: #555;
+}
+
+.about a {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.about a:hover {
+    background-color: #ff3b3b;
+}
+
+/* CONTACT */
+.contact {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* RESPONSIVE NAV */
+@media(max-width: 768px) {
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
